@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+}
+.container {
+    display: block;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 60px;
+    align-items: center;
+}
+.navigation img:hover {
+    opacity: 0.5;
+}
+button {
+    border: none;
+    color: rgb(170, 33, 33);
+    background-color: transparent;
+}
+.h-menu {
+    padding: 0px 5px;
+}
+.h-menu:hover {
+    opacity: 0.5;
+}
+.nav-links a {
+    color: rgb(170, 33, 33);
+    text-decoration: none;
+    font-size: 1.75rem;
+    font-family: 'Altona Sans', sans-serif;
+    padding: 0px 30px;
+}
+.nav-links a:hover {
+    opacity: 0.5;
+}
+.order-button a {
+    background-color: rgb(170, 33, 33);
+    color: white;
+    padding: 12px 24px;
+}
+.order-button a:hover {
+    opacity: 1;
+    background-color: transparent;
+    color: rgb(170, 33, 33);
+    box-sizing: border-box;
+    border: 3.5px solid rgb(170, 33, 33);
+}
+.hero {
+    position: relative;
+}
+.hero-text {
+    position: absolute;
+    top: -10px;
+    left: 19%;
+    font-size: 1.05rem;
+    font-family: 'Altona Sans', sans-serif;
+    text-align: center;
+    color: white;
+}
+.hero-button a {
+    text-decoration: none;
+    color: white; 
+    background-color: rgb(170, 33, 33);
+    padding: 12px 22px;
+}
+.hero-button a:hover {
+    background-color: transparent;
+    color: rgb(170, 33, 33);
+    box-sizing: border-box;
+    border: 5px solid rgb(170, 33, 33);
+}
+.about-us{
+    display: block;
+    font-size: 2rem;
+    font-family: 'Altona Sans', sans-serif;
+    text-align: center;
+    color: rgb(170, 33, 33);
+    padding: 40px 0px;
+    justify-content: center;
+}
+.about-us-text {
+    align-items: center;
+    padding: 0px 30px;
+}
+.about-us-text p {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.65rem;
+    color: black;
+}
+.michelin-star-award {
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Altona Sans', sans-serif;
+    color: rgb(170, 33, 33);
+    padding: 30px 0px;
+}
+.michelin-star-award-text {
+    align-items: center;
+    padding: 0px 30px;
+}
+.michelin-star-award-text p {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.65rem;
+    color: black;
+}
+footer {
+    display: block;
+    background-color: rgb(170, 33, 33);
+    color: white;
+    font-family: 'Altona Sans', sans-serif;
+    text-align: center;
+    padding: 20px 0px;
+}
+.footer-right {
+    text-align: center;
+    font-size: 1.4rem;
+}
+.footer-right2 {
+    text-align: center;
+    font-size: 1.4rem;
+}
+.contact-info-social a {
+    padding: 0px 20px;
+}
+.contact-info-social a:hover {
+    cursor: pointer;
+}
+
+/* display utilities */
+.show-desktop {
+    display: none;
+}
+.show-mobile {
+    display: inline;
+}
+@media (min-width: 648px) {
+    .navigation {
+        padding: 20px 95px;
+    }
+    .show-desktop {
+        display: block;
+    }
+    .show-mobile {
+        display: none;
+    }
+    .hero-text {
+        font-size: 2.5rem;
+        top: -28px;
+        left: 24%;
+    }
+    .about-us {
+        display: flex;
+        font-size: 2.35rem;
+        text-align: left;
+        font-family: 'Altona Sans', sans-serif;
+        padding: 60px 95px;
+        color: rgb(170, 33, 33);
+        justify-content: space-between;
+    }
+    .about-us-text {
+        display: block;
+        width: 47%;
+    }
+    .about-us-text p {
+        font-family: Helvetica, sans-serif;
+        font-size: 1.85rem;
+        color: black;
+    }
+    .michelin-star-award {
+        display: flex;
+        flex-flow: row-reverse;
+        font-size: 2.35rem;
+        font-family: 'Altona Sans', sans-serif;
+        text-align: left;
+        padding: 60px 95px;
+        color: rgb(170, 33, 33);
+        justify-content: space-between;
+    }
+    .michelin-star-award-text {
+        width: 47%;
+    }
+    .michelin-star-award-text p {
+        font-family: Helvetica, sans-serif;
+        font-size: 1.85rem;
+        color: black;
+    }
+    footer {
+        display: flex;
+        background-color: rgb(170, 33, 33);
+        color: white;
+        font-family: 'Altona Sans', sans-serif;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 95px;
+    }
+    .footer-right {
+        text-align: center;
+        font-size: 1.4rem;
+        padding-left: 430px;
+    }
+    .footer-right2 {
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    .contact-info-social a {
+        padding: 0px 20px;
+    }
+}
+/* Animations */
+.fade--in, .fade--in-1 {
+    opacity: 0;
+}
+.fade--in.active {
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+.fade--in-1.active {
+    animation-name: fade-in-1;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+.scale--up.active {
+    animation-name: scale-up;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fade-in-1 {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes scale-up {
+    0% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(1.35);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
